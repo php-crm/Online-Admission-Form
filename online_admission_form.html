@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Admission Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <center><h2>Online Admission Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" name="name" required placeholder="Student Name">  
+          </div>
+          <div class="col-50">
+            <input type="date" name="student_dob" required >
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-50">
+            <textarea name="address" id="address"  rows="2" placeholder="Address"></textarea>
+          </div>     
+     </div>
+     <div class="row">
+         <div class="col-50">
+             <input type="text" name="city" required placeholder="City">
+         </div>
+         <div class="col-50">
+            <input type="text" name="state" required placeholder="State">
+        </div>
+     </div>
+     <div class="row">
+        <div class="col-50">
+            <input type="number" name="zip_code" required placeholder="Zip Code">
+        </div>
+        <div class="col-50">
+           <input type="text" name="country" required placeholder="Country">
+       </div>
+    </div>
+    <div class="row">
+      <div class="col-50">
+        <input type="text" id="name" name="father_name" placeholder="Parent/Guardian Name">  
+      </div>     
+    </div>
+    <div class="row">
+       <div class="col-50">
+       <input type="text" id="name" name="Public_school_name" placeholder="Public High School Of Residence">  
+    </div>     
+    </div>
+
+    <div class="row">
+        <div class="col-50">
+          <label>Year student entered 9th grade for the first time</label>
+          <select name="student_enter" id="">
+            <option value="14-15">14-15</option>
+            <option value="15-16">15-16</option>
+            <option value="16-17">16-17</option>
+            <option value="17-18">17-18</option>
+          </select>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-50">
+        <label for="">Is student currently enrolled and attending the school above?</label><br><br>
+        <input type="radio" name="attend" value="Yes"> Yes <br><br>
+        <input type="radio" name="attend" value="No"> No <br><br>
+      </div>
+     </div>
+         <div class="row">
+             <div class="col-50">
+              <label for="">Grade currently enrolled in</label><br><br>
+              <input type="radio" name="enrolled" value="8th"> 8th <br><br>
+              <input type="radio" name="enrolled" value="9th"> 9th <br><br>
+              <input type="radio" name="enrolled" value="10th"> 10th <br><br>
+              <input type="radio" name="enrolled" value="11th"> 11th <br><br>
+              <input type="radio" name="enrolled" value="12th"> 12th <br><br>
+             </div>
+            </div>
+        <div class="row">
+          <div class="col-50">
+            <label>Did/will your child complete the 2020-2021 school year?</label><br><br>
+             <input type="radio" required name="school_complete" value="Yes"> Yes <br><br>
+             <input type="radio" required name="school_complete" value="No"> No <br><br>
+          </div>
+      </div>
+
+       <div class="row">
+        <div class="col-50">
+            <input type="text" name="last_school" required placeholder="Name Of Last School">
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-50">
+        <label>Was your child suspended, expelled, or placed in any type of alternative <br> &nbsp;&nbsp;class during the last 12 months?</label><br><br>
+         <input type="radio" name="suspended" value="Yes"> Yes <br><br>
+         <input type="radio" name="suspended" value="No"> No <br><br>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-50"><textarea name="infraction" id="address" rows="3" placeholder="If yes, please give date, name of school & infraction."></textarea></div>
+        </div>
+        <input type="submit" value="Submit Application" class="btn">
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
